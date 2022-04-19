@@ -18,6 +18,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.15.4
+          
+      - run: sudo snap install snapcraft --classic  
 
       - name: Build/release Electron app
         uses: samuelmeuli/action-electron-builder@v1
